@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Postage Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form action="/rate" method="get" class="form-group">
+    <div class="card" style="width: 25rem; padding: 10px 10px 10px 10px;">
+        <h3 class="card-title">Shipping Calculator</h3>
+        <img class="card-img-top" src="USPS-rounded-logo.png" alt="USPS Eagle">
+        <div class="card-body">
+            <p class="card-text"> Put in the weight and select the package/letter type.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <label for="weight">Weight in lbs:</label><br>
+            <input type="numbers" name="weight" class="form-control"><br>
+            <label for="mailType">Select Mail Type:</label><br>
+            <select name="mailType" id="mailType" class="form-control">
+                <option value="stamped">Letters (Stamped)</option>
+                <option value="metered">Letters (Metered)</option>
+                <option value="flats">Large Envelopes (Flats)</option>
+                <option value="firstClass">First-Class Package Service—Retail</option>
+            </select><br>
+        </ul>
+        <div class="card-body">
+            <button type="submit" name="submitRates" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
